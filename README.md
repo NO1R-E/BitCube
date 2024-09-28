@@ -4,3 +4,4 @@ Todo
 -skill
 -enemy
 -pic
+How the hell to use Git
