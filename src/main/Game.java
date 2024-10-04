@@ -7,7 +7,7 @@ public class Game extends JFrame {
 	private static final long serialVersionUID = 1L;
 	public MenuPanel menuPanel;
 	public HTPlayPanel htPlayPanel;
-	public DifficultyPanel difficultyPanel;
+	//public DifficultyPanel difficultyPanel;
     public GamePanel gamePanel;
     public GameLogic gameLogic;
     public SettingPanel settingPanel;
@@ -24,7 +24,7 @@ public class Game extends JFrame {
         
         menuPanel = new MenuPanel(this);
         add(menuPanel,"Menu");
-        htPlayPanel = new HTPlayPanel();
+        htPlayPanel = new HTPlayPanel(this);
         add(htPlayPanel,"HTP");
         settingPanel = new SettingPanel(this);
         add(settingPanel,"Setting");
@@ -32,8 +32,8 @@ public class Game extends JFrame {
         gamePanel = new GamePanel(this);
         gameLogic = gamePanel.gameLogic;
         add(gamePanel,"Game");
-        difficultyPanel = new DifficultyPanel(this);
-        add(difficultyPanel, "Difficulty");
+        //difficultyPanel = new DifficultyPanel(this);
+        //add(difficultyPanel, "Difficulty");
         
         
         switchToMenu();
